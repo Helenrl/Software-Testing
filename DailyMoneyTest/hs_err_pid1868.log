@@ -1,0 +1,132 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (javaClasses.cpp:124), pid=1868, tid=6532
+#  fatal error: Invalid layout of preloaded class
+#
+# JRE version:  (8.0_05-b13) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.5-b02 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000000000286d800):  JavaThread "Unknown thread" [_thread_in_vm, id=6532, stack(0x0000000002730000,0x0000000002830000)]
+
+Stack: [0x0000000002730000,0x0000000002830000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x308dea]
+V  [jvm.dll+0x25def1]
+V  [jvm.dll+0x25eb0f]
+V  [jvm.dll+0x256466]
+V  [jvm.dll+0x5d33c]
+V  [jvm.dll+0x5d433]
+V  [jvm.dll+0x71d2a]
+V  [jvm.dll+0x72088]
+V  [jvm.dll+0xe1607]
+V  [jvm.dll+0xe1996]
+V  [jvm.dll+0x1f13e7]
+V  [jvm.dll+0x2227c4]
+V  [jvm.dll+0x149f71]
+C  [javaw.exe+0x208a]
+C  [javaw.exe+0xc9db]
+C  [javaw.exe+0xca6f]
+C  [KERNEL32.DLL+0x15dd]
+C  [ntdll.dll+0x764ad]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x000000000286d800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=6532, stack(0x0000000002730000,0x0000000002830000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.145 loading class java/lang/CharSequence done
+Event: 0.145 loading class java/lang/String done
+Event: 0.145 loading class java/lang/Class
+Event: 0.145 loading class java/lang/reflect/AnnotatedElement
+Event: 0.145 loading class java/lang/reflect/AnnotatedElement done
+Event: 0.145 loading class java/lang/reflect/GenericDeclaration
+Event: 0.145 loading class java/lang/reflect/GenericDeclaration done
+Event: 0.145 loading class java/lang/reflect/Type
+Event: 0.145 loading class java/lang/reflect/Type done
+Event: 0.145 loading class java/lang/Class done
+
+
+Dynamic libraries:
+0x00007ff60e9c0000 - 0x00007ff60e9f4000 	C:\Program Files\Java\jre8\bin\javaw.exe
+0x00007ffee7e40000 - 0x00007ffee7fe9000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffee7bf0000 - 0x00007ffee7d29000 	C:\WINDOWS\system32\KERNEL32.DLL
+0x00007ffee51c0000 - 0x00007ffee52ce000 	C:\WINDOWS\system32\KERNELBASE.dll
+0x00007ffee5860000 - 0x00007ffee5905000 	C:\WINDOWS\system32\ADVAPI32.dll
+0x00007ffee7620000 - 0x00007ffee7791000 	C:\WINDOWS\system32\USER32.dll
+0x00007ffee2510000 - 0x00007ffee276a000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.9600.16384_none_62475f7becb72503\COMCTL32.dll
+0x00007ffee73c0000 - 0x00007ffee7467000 	C:\WINDOWS\system32\msvcrt.dll
+0x00007ffee7de0000 - 0x00007ffee7e37000 	C:\WINDOWS\SYSTEM32\sechost.dll
+0x00007ffee77a0000 - 0x00007ffee78d6000 	C:\WINDOWS\system32\RPCRT4.dll
+0x00007ffee7aa0000 - 0x00007ffee7be5000 	C:\WINDOWS\system32\GDI32.dll
+0x00007ffee53e0000 - 0x00007ffee5414000 	C:\WINDOWS\system32\IMM32.DLL
+0x00007ffee5990000 - 0x00007ffee5ac9000 	C:\WINDOWS\system32\MSCTF.dll
+0x0000000073cd0000 - 0x0000000073da2000 	C:\Program Files\Java\jre8\bin\msvcr100.dll
+0x00000000734a0000 - 0x0000000073cca000 	C:\Program Files\Java\jre8\bin\server\jvm.dll
+0x00007ffed9100000 - 0x00007ffed9109000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ffee4f70000 - 0x00007ffee4f8f000 	C:\WINDOWS\system32\WINMM.dll
+0x00007ffee7910000 - 0x00007ffee7917000 	C:\WINDOWS\system32\PSAPI.DLL
+0x00007ffee5420000 - 0x00007ffee5478000 	C:\WINDOWS\system32\WS2_32.dll
+0x00007ffee4ed0000 - 0x00007ffee4efa000 	C:\WINDOWS\system32\WINMMBASE.dll
+0x00007ffee7900000 - 0x00007ffee7909000 	C:\WINDOWS\system32\NSI.dll
+0x00007ffee4f20000 - 0x00007ffee4f6a000 	C:\WINDOWS\SYSTEM32\cfgmgr32.dll
+0x00007ffee4ea0000 - 0x00007ffee4ec6000 	C:\WINDOWS\system32\DEVOBJ.dll
+0x0000000073490000 - 0x000000007349f000 	C:\Program Files\Java\jre8\bin\verify.dll
+0x0000000073460000 - 0x0000000073488000 	C:\Program Files\Java\jre8\bin\java.dll
+0x00000000733d0000 - 0x00000000733f3000 	C:\Program Files\Java\jre8\bin\instrument.dll
+0x0000000073440000 - 0x0000000073456000 	C:\Program Files\Java\jre8\bin\zip.dll
+0x00007ffed5800000 - 0x00007ffed5988000 	C:\WINDOWS\SYSTEM32\dbghelp.dll
+
+VM Arguments:
+jvm_args: -javaagent:C:\Users\ricli\Downloads\adt-bundle-windows-x86_64-20140702\eclipse\configuration\org.eclipse.osgi\bundles\302\1\.cp\jacocoagent.jar=includes=*,excludes=,exclclassloader=sun.reflect.DelegatingClassLoader,output=tcpclient,port=63146 -Dfile.encoding=Cp1252 -Xbootclasspath:C:\Users\ricli\Downloads\adt-bundle-windows-x86_64-20140702\sdk\platforms\android-21\android.jar 
+java_command: org.eclipse.jdt.internal.junit.runner.RemoteTestRunner -version 3 -port 63147 -testLoaderClass org.eclipse.jdt.internal.junit.runner.junit3.JUnit3TestLoader -loaderpluginname org.eclipse.jdt.junit.runtime -classNames com.bottleworks.dailymoney.core.test.EvaluatorTest
+java_class_path (initial): C:\Users\ricli\workspace\DailyMoneyTest\bin\classes;C:\Users\ricli\workspace\daily-money-master\dailymoney\libs\arity-1.3.3.jar;C:\Users\ricli\workspace\daily-money-master\dailymoney\libs\javacsv.jar;C:\Users\ricli\workspace\daily-money-master\dailymoney\libs\libGoogleAnalytics.jar;C:\Users\ricli\workspace\daily-money-master\dailymoney\libs\achartengine-dm.jar;C:\Users\ricli\workspace\daily-money-master\dailymoney\bin\classes;/C:/Users/ricli/Downloads/adt-bundle-windows-x86_64-20140702/eclipse/configuration/org.eclipse.osgi/bundles/186/1/.cp/;C:\Users\ricli\Downloads\adt-bundle-windows-x86_64-20140702\eclipse\configuration\org.eclipse.osgi\bundles\302\1\.cp\jacocoagent.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+CLASSPATH=C:\Users\ricli\Documents\Visual Studio 2013\Projects\Cryptanalysis\Cryptanalysis\bin\Debug\bin;
+PATH=C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Java\jdk1.8.0_05\bin;
+USERNAME=ricli
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 37 Stepping 5, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 8.1 , 64 bit Build 9600 
+
+CPU:total 4 (2 cores per cpu, 2 threads per core) family 6 model 37 stepping 5, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, aes, clmul, ht, tsc, tscinvbit
+
+Memory: 4k page, physical 3980672k(1156188k free), swap 8043904k(3540800k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.5-b02) for windows-amd64 JRE (1.8.0_05-b13), built on Mar 18 2014 01:08:39 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Sat Nov 15 21:22:04 2014
+elapsed time: 0 seconds
+
